@@ -18,6 +18,14 @@
         <div class="min-h-screen bg-gray-100">
             @include('layouts.navigation')
 
+            @if (session('status'))
+                <div class="mx-auto mt-4 max-w-7xl px-4 sm:px-6 lg:px-8" role="status" aria-live="polite">
+                    <div class="rounded-md bg-emerald-50 px-4 py-3 text-sm font-medium text-emerald-800 ring-1 ring-emerald-200">
+                        {{ session('status') }}
+                    </div>
+                </div>
+            @endif
+
             <!-- Page Heading -->
             @isset($header)
                 <header class="bg-white shadow">

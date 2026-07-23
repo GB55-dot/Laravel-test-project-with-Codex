@@ -8,7 +8,7 @@
 - Form Request-валідацію та API Resource-відповіді;
 - Blade + Tailwind CSS інтерфейс з AJAX-запитами;
 - SQLite, пагінацію, кешування, інвалідацію кешу, транзакції й логування;
-- 36 автоматизованих тестів, з них 11 спеціально для API;
+- 39 автоматизованих тестів, з них 11 спеціально для API;
 - production checklist і health endpoint `/up`.
 
 ## Швидкий запуск
@@ -368,6 +368,8 @@ npm run build  # мінімізований production build
 [Vite](https://laravel.com/docs/13.x/vite).
 
 ## Крок 6. Тестування
+
+Окремий розбір registration flow, його захистів та тестів: [docs/REGISTRATION.md](docs/REGISTRATION.md).
 
 Запуск:
 
